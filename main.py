@@ -1,11 +1,8 @@
 from server import Server
-from primality import Primality_test
 
 def main():
-  # Server.run()
-  primality = Primality_test()
-  result = primality.isPrime(11)
-  print(result)
+  simpleServer = Server()
+  simpleServer.run()
   '''
   while True:
     number = input("Enter a number: ")
