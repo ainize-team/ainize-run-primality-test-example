@@ -1,9 +1,12 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
+import socketserver
+from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse
 
 from primality import Primality_test
 
 primality = Primality_test()
+
+PORT = 80
 
 class Request_handler(BaseHTTPRequestHandler):
   def do_GET(self):
@@ -31,7 +34,6 @@ class Server():
     pass
 
   def run(self):
-    server_address = ('127.0.0.1', 80)
-    httpd = HTTPServer(server_address, Request_handler)
-    print('running server...')
-    httpd.serve_forever()
+    with socketserver.TCPServer(("", PORT), Request_handler) as httpd:
+      print("serving at port", PORT)
+      httpd.serve_forever()

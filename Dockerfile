@@ -1,5 +1,8 @@
 FROM python:3
 
-ADD main.py /
+COPY . /workspace
+WORKDIR /workspace
 
-CMD [ "python", "./main.py" ]
+EXPOSE 80
+
+CMD python ./main.py
