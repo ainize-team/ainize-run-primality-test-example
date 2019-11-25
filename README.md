@@ -6,7 +6,7 @@ docker build -t ainize/primality-test .
 ```
 ## Docker run
 ```
-docker run -p 80:80 -d primality-test
+docker run -p 80:80 -d ainize/primality-test
 ```
 
 ## How to use
