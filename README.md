@@ -4,11 +4,11 @@
 
 ## Docker build
 ```
-docker build -t ainize/primality-test .
+docker build -t ${YOUR_DOCKER_HUB_REPO}/primality-test .
 ```
 ## Docker run
 ```
-docker run -p 80:80 -d ainize/primality-test
+docker run -p 80:80 -d ${YOUR_DOCKER_HUB_REPO}/primality-test
 ```
 
 ## How to use
