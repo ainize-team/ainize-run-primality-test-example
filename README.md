@@ -11,8 +11,11 @@ docker build -t ${YOUR_DOCKER_HUB_ID}/primality-test .
 ```
 docker run -p 80:80 -d ${YOUR_DOCKER_HUB_ID}/primality-test
 ```
+Now the server is available at http://localhost. To learn how to query the server, see the next section.
 
-## How to use
+Note that the docker image can be deployed using any docker-based deploy platform (e.g. [ainize.ai](https://ainize.ai)).
+
+## How to query
 Now the primality test application is running on http://localhost/?number=${ANY_POSITIVE_INTEGER}.
 If Mersenne prime number 170141183460469231731687303715884105727 is used, the result will be shown on your browser as below.
 ```
