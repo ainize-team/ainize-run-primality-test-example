@@ -13,11 +13,8 @@ docker run -p 80:80 -d ${YOUR_DOCKER_HUB_ID}/primality-test
 ```
 
 ## How to use
-The primality test application is running on localhost.
-```
-http://localhost/?number=${ANY_POSITIVE_INTEGER}
-```
-If Mersenne prime number 170141183460469231731687303715884105727 is used, the result below will be shown on your browser.
+Now the primality test application is running on http://localhost/?number=${ANY_POSITIVE_INTEGER}.
+If Mersenne prime number 170141183460469231731687303715884105727 is used, the result will be shown on your browser as below.
 ```
 Number 170141183460469231731687303715884105727 is prime.
 ```
