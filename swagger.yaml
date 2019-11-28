@@ -1,0 +1,30 @@
+openapi: 3.0.0
+
+info:
+  title: primality-test-swagger-example
+  version: 0.0.1
+
+server:
+  - url: http://endpoint-dev.ainize.ai/minsulee2/primality-test
+
+paths:
+  /:
+    get:
+      parameters:
+        - name: number
+          in: query
+          required: true
+          allowReserved: true
+      responses:
+        '200':
+          content:
+            applicatioin/json:
+              schema:
+                type: number
+                properties:
+                  result:
+                    type: string
+        '400':
+          description: Bad Request Error
+        default: 
+          description: Unexpected Error 
