@@ -4,8 +4,8 @@ info:
   title: primality-test-swagger-example
   version: 0.0.1
 
-server:
-  - url: http://endpoint-dev.ainize.ai/minsulee2/primality-test
+servers:
+  - url: https://endpoint-dev.ainize.ai/minsulee2/primality-test/
 
 paths:
   /:
@@ -20,7 +20,7 @@ paths:
           content:
             applicatioin/json:
               schema:
-                type: number
+                type: string
                 properties:
                   result:
                     type: string
