@@ -1,4 +1,4 @@
-[![Run on Ainize](https://ainize.ai/static/images/run_on_ainize_button.png)](https://ainize-cloud-run.web.app/redirect?git_repo=github.com/ainize-team/ainize-run-primality-test-example)
+[![Run on Ainize](https://ainize.ai/static/images/run_on_ainize_button.png)](https://ainize.web.app/redirect?git_repo=github.com/ainize-team/ainize-run-primality-test-example)
 
 # Primality Test Example
 A simple online prime number tester based on [Miller–Rabin primaliity test](https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test) algorithm.
